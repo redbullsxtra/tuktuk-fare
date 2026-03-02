@@ -1,0 +1,147 @@
+.landmark-detector {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.landmark-detector h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.upload-section {
+  margin-bottom: 30px;
+}
+
+.camera-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.camera-button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.camera-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.detect-button {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.detect-button:hover:not(:disabled) {
+  background-color: #27ae60;
+}
+
+.detect-button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.image-preview {
+  margin: 20px 0;
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result-section {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-section h2 {
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.distance-section {
+  margin: 15px 0;
+}
+
+.fare-section {
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.fare-section h3 {
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+}
+
+.locations-section {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #e8f4fd;
+  border-radius: 8px;
+}
+
+.fare-references {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff3cd;
+  border-radius: 8px;
+  border-left: 4px solid #ffc107;
+}
+
+.fare-references h4 {
+  margin-top: 0;
+  color: #856404;
+}
+
+.fare-references ul {
+  padding-left: 20px;
+  margin-bottom: 0;
+}
+
+.fare-references li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.error {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+@media (max-width: 600px) {
+  .landmark-detector {
+    padding: 10px;
+  }
+  
+  .camera-button, .detect-button {
+    width: 100%;
+    padding: 15px;
+  }
+}
